@@ -1,5 +1,5 @@
 from django.test import TestCase
-
+import unittest
 # Create your tests here
 class Animal(object):
     def run(self):
@@ -12,3 +12,6 @@ class Animal(object):
 Animal.a()
 dog=Animal()
 dog.a()
+class Test(unittest):
+    def test_1(self):
+        print('ceshi')
